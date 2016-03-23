@@ -17,21 +17,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     android:layout_gravity="center_horizontal|bottom"
     android:background="#88000000"
-    style="?android:attr/buttonBarStyle">
+    style="?android:attr/buttonBarStyle"
+    android:fitsSystemWindows="true">
 
     <Button
         android:id="@+id/configure"
-
         android:layout_width="0dip"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="center_vertical"
-
         android:text="@string/configure_wallpaper"
-
         android:onClick="configureLiveWallpaper"
         style="?android:attr/buttonBarButtonStyle" />
 
@@ -40,9 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="center_vertical"
-
         android:text="@string/wallpaper_instructions"
-
         android:onClick="setLiveWallpaper"
         style="?android:attr/buttonBarButtonStyle" />
 </LinearLayout>
